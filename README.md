@@ -1,4 +1,4 @@
-## https://proyecto-rutas-ejs.netlify.app/
+## https://rutas-ejs-node.netlify.app/
 
 ### 1. Crear `package.json`
 
