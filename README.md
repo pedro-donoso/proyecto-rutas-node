@@ -34,7 +34,7 @@ npm init -y
 }
 ```
 
-### 2. Instala Dependencias
+### 2. Instala `Dependencias`
 Instala Express, Morgan y EJS como dependencias de producción:
 
 ```
@@ -47,7 +47,7 @@ Instala Nodemon como una dependencia de desarrollo:
 npm install nodemon --save-dev
 ```
 
-### 3. Configura el Servidor en src/index.js
+### 3. Configura el `Servidor` en src/index.js
 Abre src/index.js y agrega el siguiente código:
 
 ```
@@ -69,7 +69,7 @@ app.listen(PORT, () => {
 });
 ```
 
-### 4. Configura las Rutas en src/routes/index.js
+### 4. Configura las `Rutas` en src/routes/index.js
 Abre src/routes/index.js y agrega el siguiente código:
 
 ```
@@ -83,7 +83,7 @@ router.get('/contact', (req, res) => res.render('contact', { title: 'Contact' })
 export default router;
 ```
 
-### 4. Creo las vistas ejs
+### 4. Creo las `vistas` ejs
 Agrega el siguiente contenido a src/views/index.ejs, about.ejs y contact.ejs
 
 ```
@@ -107,7 +107,7 @@ Agrega el siguiente contenido a src/views/index.ejs, about.ejs y contact.ejs
 </html>
 ```
 
-### 5. Agrega el Script de Construcción en build.js
+### 5. Agrega el `Script de Construcción` en build.js
 Crea un archivo llamado build.js en la raíz de tu proyecto y agrega el siguiente código:
 
 ```
@@ -139,7 +139,7 @@ views.forEach(view => {
 console.log('Build completed! HTML files are in the dist folder.');
 ```
 
-### 6. Creo archivo de configuracion netlify.toml:
+### 6. Creo `archivo de configuracion` netlify.toml:
 
 ```
 [build]
@@ -147,14 +147,14 @@ console.log('Build completed! HTML files are in the dist folder.');
   command = "npm run build"
 ```
 
-### 7. Ejecuta el comando de Construcción:
+### 7. Ejecuta el comando de `Construcción`:
 Esto generará los archivos HTML en la carpeta dist, que es la que Netlify utilizará para el despliegue.
 
 ```
 npm run build
 ```
 
-### 8. Despliegue manual en Netlify:
+### 8. `Despliegue manual` en Netlify:
 
 ![manual](https://github.com/user-attachments/assets/2f3f1e20-368b-46a4-aebe-ed596cbfc71b)
 
