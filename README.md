@@ -144,6 +144,13 @@ Asegúrate de que tu package.json tenga el siguiente script para iniciar el serv
 }
 ```
 
+### 7. Creo archivo de configuracion netlify.toml:
+
+```
+[build]
+  publish = "dist"
+  command = "npm run build"
+```
 
 
 
