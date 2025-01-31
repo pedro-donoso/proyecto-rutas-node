@@ -1,7 +1,11 @@
-### 0. Crear package.json
+## [rutas-node-ejs.netlify.app/](https://rutas-node-ejs.netlify.app/)
+
+### 1. Crear `package.json`
+
+Abre tu terminal y navega a la carpeta de tu proyecto. Luego, ejecuta el siguiente comando para crear un archivo `package.json`:
 
 ```
-npm init
+npm init -y
 ```
 
 ```
@@ -11,6 +15,9 @@ npm init
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "build": "node build.js"
   },
   "keywords": [],
   "author": "",
@@ -19,8 +26,7 @@ npm init
   "dependencies": {
     "ejs": "^3.1.10",
     "express": "^4.21.2",
-    "morgan": "^1.10.0",
-    "proyecto-rutas-node": "file:"
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
@@ -28,7 +34,7 @@ npm init
 }
 ```
 
-### 1. Instala Dependencias
+### 2. Instala Dependencias
 Instala Express, Morgan y EJS como dependencias de producción:
 
 ```
@@ -41,7 +47,7 @@ Instala Nodemon como una dependencia de desarrollo:
 npm install nodemon --save-dev
 ```
 
-### 2. Configura el Servidor en src/index.js
+### 3. Configura el Servidor en src/index.js
 Abre src/index.js y agrega el siguiente código:
 
 ```
@@ -63,7 +69,7 @@ app.listen(PORT, () => {
 });
 ```
 
-### 3. Configura las Rutas en src/routes/index.js
+### 4. Configura las Rutas en src/routes/index.js
 Abre src/routes/index.js y agrega el siguiente código:
 
 ```
@@ -133,24 +139,22 @@ views.forEach(view => {
 console.log('Build completed! HTML files are in the dist folder.');
 ```
 
-### 6. Configura el Script de Inicio en package.json
-Asegúrate de que tu package.json tenga el siguiente script para iniciar el servidor:
-
-```
-"scripts": {
-  "start": "node src/index.js",
-  "dev": "nodemon src/index.js",
-  "build": "node build.js"
-}
-```
-
-### 7. Creo archivo de configuracion netlify.toml:
+### 6. Creo archivo de configuracion netlify.toml:
 
 ```
 [build]
   publish = "dist"
   command = "npm run build"
 ```
+
+### 7. Despliegue manual en Netlify:
+
+![manual](https://github.com/user-attachments/assets/2f3f1e20-368b-46a4-aebe-ed596cbfc71b)
+
+![drag](https://github.com/user-attachments/assets/51dfe80f-1281-4963-b9e8-2a730d9b5aad)
+
+![dist](https://github.com/user-attachments/assets/55bcac16-cb52-4035-aa4e-ec10fc0384c5)
+
 
 
 
