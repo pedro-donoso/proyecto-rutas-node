@@ -1,4 +1,4 @@
-## [[rutas-node-ejs.netlify.app/](https://rutas-node-ejs.netlify.app/)](https://proyecto-rutas-node.netlify.app/)
+## https://proyecto-rutas-ejs.netlify.app/
 
 ### 1. Crear `package.json`
 
