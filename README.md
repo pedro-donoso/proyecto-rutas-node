@@ -147,7 +147,14 @@ console.log('Build completed! HTML files are in the dist folder.');
   command = "npm run build"
 ```
 
-### 7. Despliegue manual en Netlify:
+### 7. Ejecuta el comando de Construcción:
+Esto generará los archivos HTML en la carpeta dist, que es la que Netlify utilizará para el despliegue.
+
+```
+npm run build
+```
+
+### 8. Despliegue manual en Netlify:
 
 ![manual](https://github.com/user-attachments/assets/2f3f1e20-368b-46a4-aebe-ed596cbfc71b)
 
