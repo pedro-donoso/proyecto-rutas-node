@@ -155,6 +155,7 @@ views.forEach((view) => {
 ```
 
 ### 6. Creo `archivo de configuracion` netlify.toml:
+En la reíz del proyecto
 
 ```
 [build]
