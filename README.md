@@ -8,7 +8,7 @@ Abre tu terminal y navega a la carpeta de tu proyecto. Luego, ejecuta el siguien
 npm init -y
 ```
 
-### 2. Agregar scripts:
+### 2. Agregar scripts y type: module
 
 ```
 {
