@@ -48,7 +48,7 @@ npm install nodemon --save-dev
 ```
 
 ### 3. Configura el `Servidor` en src/index.js
-Abre src/index.js y agrega el siguiente código:
+Creo carpeta src y archivo index.js y agrega el siguiente código:
 
 ```
 import express from 'express';
