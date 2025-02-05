@@ -1,3 +1,5 @@
+![imagen](https://github.com/user-attachments/assets/116eefa6-44b0-4941-9303-816df6719eac)
+
 ## [https://rutas-ejs-node.netlify.app/](https://rutas-ejs-node.netlify.app/)
 
 ### 1. Crear `package.json`
