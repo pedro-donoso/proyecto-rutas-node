@@ -16,9 +16,34 @@
 
 	<%- include('partials/navigation.ejs') %>
 
-		<!-- Contenido principal -->
-		<div class="container mx-auto my-10">
-			<h1 class="text-4xl font-bold text-center">CONTACT</h1>
+		<div class="flex items-center justify-center min-h-screen bg-gray-900">
+			<div class="bg-gray-800 text-white rounded-lg shadow-lg w-full max-w-md">
+				<div class="px-6 py-4 border-b border-gray-700">
+					<h3 class="text-xl font-semibold text-center">Contact me</h3>
+				</div>
+				<div class="px-6 py-4">
+					<form>
+						<div class="mb-4">
+							<label for="email" class="block text-sm font-medium">Email</label>
+							<input type="email" placeholder="Email"
+								class="mt-1 block w-full p-2 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:ring focus:ring-blue-500"
+								required>
+						</div>
+
+						<div class="mb-4">
+							<label for="message" class="block text-sm font-medium">Message:</label>
+							<textarea name="message" rows="3"
+								class="mt-1 block w-full p-2 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:ring focus:ring-blue-500"
+								placeholder="Write a Message" required></textarea>
+						</div>
+
+						<button type="submit"
+							class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-500 transition duration-200">
+							Save
+						</button>
+					</form>
+				</div>
+			</div>
 		</div>
 
 		<%- include('partials/footer.ejs') %>
